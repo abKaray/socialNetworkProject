@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Каракай Александр</title>
+    <link href="./libs/bootstrap.css" rel="stylesheet">
+    <link href="./libs/bootstrap-theme.css" rel="stylesheet">
+    <link href="./style/style.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="header">
+    <div class="row head">
+        <span class="col-md-3 logo"><a href="#">LOGO</a></span>
+        <div class="col-md-offset-6 col-md-2 reg-head">
+
+            <a href="#" class="head-registr">регистрация</a>
+            <div id="myModal" class="modal">
+
+                <!-- Скрытый контент -->
+                <div class="modal-content">
+                    <div class="modal-head">
+                        <span class="close">&times;</span>
+                        <div class="title-modal">Регистрация</div>
+                    </div>
+                    <div class="modal-bdy">
+                        <div class="text-form">
+                            <b>Пожалуйста, укажите Ваше имя и фамилию.</b><br>
+                            Чтобы облегчить общение и поиск друзей, у нас приняты настоящие имена и фамилии.
+                        </div>
+                        <div class="input-form">
+                            <form class="reg_form" action="/reg" method="post">
+                                <input type="email" name="emailUser" class="eml" placeholder="Ваш email" required>
+                                <div class="repeatEmail"></div>
+                                <input type="password" name="passUser" class="psw" placeholder="Ваш пароль" required>
+
+                                <button type="submit" class="btn btn-default" id="send_enter">Зарегестрироваться</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <!-- Конец -->
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="body-section">
+    <div class="row reg">
+        <div class="col-md-7 mainImg">
+            <img src="./image/monitor.png">
+            <div class="body-content">
+                <ul class="nav nav-tabs" role="tablist">
+                    <li role="presentation" class="active"><a href="#info" aria-controls="info" role="tab" data-toggle="tab">Почему мы</a></li>
+                    <li role="presentation"><a href="#intresting" aria-controls="interesting" role="tab" data-toggle="tab">Это интересно</a></li>
+                    <li role="presentation"><a href="#contact" aria-controls="contact" role="tab" data-toggle="tab">Контакты</a></li>
+                </ul>
+                <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane active" id="info">Вот подборка неудач людей. Внутри больше<br> <iframe width="515" height="230" src="https://www.youtube.com/embed/odGaq0_ynrk" frameborder="0" allowfullscreen></iframe></div>
+                    <div role="tabpanel" class="tab-pane" id="intresting"> Этот сайт написал один человек, который учится в Web-Academy</div>
+                    <div role="tabpanel" class="tab-pane" id="contact">Если у Вас возникли какие-то проблемы, позвонить некому, придеться решать все самому</div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-offset-1 col-md-3 mainReg">
+            <div class="registForm">
+                <form class="entry_form">
+                <div class="reg-label">Ваш e-mail</div>
+                <input type="email" class="entry_email" required>
+                    <div class="repeatEntry"></div>
+                <div class="reg-label">Пароль</div>
+                <input type="password" class="entry_password" required>
+                    <div class="repeatEntry"></div>
+                    <button type="submit" class="btn btn-default">Вход</button>
+
+                </form>
+                <button class="btn btn-default" id="send">Зарегестрироваться</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="./libs/jquery-3.2.1.min.js"></script>
+<script src="./libs/bootstrap.js"></script>
+<script src="./js/labelPlugin.js"></script>
+<script src="./js/slider.js"></script>
+<script src="./js/index.js"></script>
+</body>
+</html>
